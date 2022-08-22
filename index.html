@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title>DEINSOFT</title>
-    <link rel="shortcut icon" href="img/logo_deinsoft.png" />
+    <link rel="shortcut icon" href="/img/logo_deinsoft.png" />
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -65,6 +65,9 @@
                         <a href="#services">Servicios</a>
                     </li>
                     <li>
+                        <a href="facturacion-electronica.html">Facturación electrónica</a>
+                    </li>
+                    <li>
                         <a href="#contact">Contacto</a>
                     </li>
                 </ul>
@@ -88,7 +91,7 @@
                         <div class="slider-text-wrapper">  
                             <div class="container">
                                 <div class="big">Desarrollo Web </div>          
-                                <div class="small">Desarrollo de Sistemas Web a medida de su negocio</div>
+                                <div class="small" style="color: white;">Desarrollo de Sistemas Web a medida de su negocio</div>
                                 <a href="#works" class="middle btn btn-white">Saber más</a>
                             </div>       
                         </div>
@@ -99,7 +102,7 @@
                         <div class="slider-text-wrapper"> 
                             <div class="container">                       
                                 <div class="big">Desarrollo de Sistemas de Escritorio </div>          
-                                <div class="small">Desarrollamos sistemas robustos de uso local en su empresa</div>
+                                <div class="small" style="color: white;">Desarrollamos sistemas robustos de uso local en su empresa</div>
                                 <a href="#works" class=" middle btn btn-white">Saber más</a>
                             </div>
                          </div>
@@ -109,9 +112,9 @@
                     <li class="third">
                         <div class="slider-text-wrapper"> 
                             <div class="container">                              
-                                <div class="big">Migración de Software </div>          
-                                <div class="small">Usamos las mejores metodologías para el desarrollo de sistemas a largo plazo en su empresa</div>
-                                <a href="#works" class="middle btn btn-white">Saber más</a>
+                                <div class="big">Facturación electrónica </div>          
+                                <div class="small" style="color: white;">Genere y comunique sus comprobantes electrónicos a SUNAT</div>
+                                <a href="facturacion-electronica.html" class="middle btn btn-white">Saber más</a>
                              </div>
                         </div>
                         <img src="img/slider/3.jpg" alt="">
@@ -258,23 +261,29 @@
                     <section class="tm-contact-form-box mx-auto mb-7">
                         <h3 class="tm-title-gray mb-4 text-center">Contáctenos</h3>
                         <hr class="mb-8 tm-hr tm-hr-s mx-auto">
-                        <form id="contact-form" action="" method="POST" class="tm-contact-form">
+                        <form id="contact-form" action="enviar.php" method="POST" class="tm-contact-form">
                             <div class="form-group">
-                                <input type="text" name="name" class="form-control rounded-0" placeholder="Name" required />
+                                <input type="text" name="name" class="form-control rounded-0" placeholder="Nombre o Razón Social" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="celular" class="form-control rounded-0" placeholder="Celular" required />
                             </div>
                             <div class="form-group">
                                 <input type="email" name="email" class="form-control rounded-0" placeholder="Email" required />
                             </div>
                             <div class="form-group">
-                                <select class="form-control" id="contact-select" name="inquiry">
-                                    <option value="-">Subject</option>
-                                    <option value="sales">Sales &amp; Marketing</option>
-                                    <option value="creative">Creative Design</option>
-                                    <option value="uiux">UI / UX</option>
+                                <select class="form-control" id="asunto" name="asunto">
+                                    <option value="-">Asunto</option>
+                                    <option value="sales">Facturación electrónica</option>
+                                    <option value="creative">Desarrollo web</option>
+                                    <option value="uiux">Desarrollo Móvil</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Message" required=></textarea>
+                                <input type="text" name="empresa" class="form-control rounded-0" placeholder="Empresa" required />
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Message" required ></textarea>
                             </div>
             
                             <div class="form-group mb-0">
@@ -288,7 +297,7 @@
                             <div class="col-12">
                                 <ul class="mail-icon">
                                     <li><img src="img/phone_icon.png" /> (+51) 978512583 </li>
-                                    <li><img src="img/mail_icon.png" /> edwardrojasalfaro@gmail.com</li>
+                                    <li><img src="img/mail_icon.png" /> admin@opendeinsoft.com</li>
     
                                 </ul>
                             </div>
@@ -297,7 +306,6 @@
                         <div class="row">
                             <ul class="social_icon">
                                 <li> <a href="https://www.facebook.com/DeinsoftCapei" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
-                                <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
@@ -342,7 +350,7 @@
                             <a href="#contact">Contacto</a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; DEINSOFT SRL 2021. Todos los derechos reservados</p>
+                    <p class="copyright text-muted">Copyright &copy; DEINSOFT SRL 2022. Todos los derechos reservados</p>
                 </div>
             </div>
         </div>

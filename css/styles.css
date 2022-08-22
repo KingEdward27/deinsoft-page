@@ -338,3 +338,17 @@ ul.social_icon li a:hover {
     border: solid #35a30a 1px;
     color: black;
 }
+.cabecera{
+	padding: 50px 0px 50px 0px;
+}
+.navbar-default .navbar-brand {
+    color: white;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default {
+    background-color: darkslategrey;
+	border-color:darkslategrey; 
+    /* border-color: #e7e7e7; */
+}
